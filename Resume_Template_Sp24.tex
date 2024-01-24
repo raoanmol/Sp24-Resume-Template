@@ -1,0 +1,180 @@
+\documentclass[letterpaper,10pt]{article}
+
+% Package Imports
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{fancyhdr}
+
+% Page styling
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margin adjustments
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeProjectNew}[3]{
+  \item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \href{#2}{Link: #2} \\
+  \end{tabular*}\vspace{0pt}
+  \small{#3}\vspace{-2pt}
+  \vspace{-5pt}
+}
+
+\newcommand{\resumeProjectNewWithoutLink}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \\
+  \end{tabular*}\vspace{0pt}
+  \small{#2}\vspace{-2pt}
+  \vspace{-5pt}
+}
+
+% Document begins
+\begin{document}
+
+% Heading
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE YOUR NAME}} & Email : \href{mailto:youremail@service.com}{youremail@service.com}\\
+  Linkedin: \href{https://www.linkedin.com/in/}{linkedin.com/in/your-url} & Mobile : Phone Number \\
+  Github: \href{https://github.com/}{github.com/your-url} \\
+\end{tabular*}
+
+% Education Section
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University}{Location}
+      {Degree;  GPA: {your-GPA}}{Start - End}
+      % In case you want to add courses
+      % {\scriptsize \textit{Courses: Course1, Course2, Course3...}}
+  \resumeSubHeadingListEnd
+
+% Experience Section
+\section{Experience}
+  \resumeSubHeadingListStart
+    % Company 1
+    \resumeSubheading
+    {Company 1}{Location}
+    {Role}{Start - End}
+    \resumeItemListStart
+        \resumeItemWithoutTitle{}{Cupcake ipsum dolor sit amet I love tootsie roll chupa chups. Tart jelly beans jujubes chocolate bear claw bonbon. Wafer macaroon tiramisu I love I love cotton candy.}
+        \resumeItemWithoutTitle{}{Cotton candy marzipan cake powder candy canes sesame snaps lemon drops halvah. Cheesecake liquorice halvah chocolate bar I love sesame snaps marzipan sesame snaps donut. Powder apple pie fruitcake tiramisu jelly beans. Cake halvah gummies sweet roll candy bear claw cake muffin donut.}
+    \resumeItemListEnd
+      
+    % Company 2
+    \resumeSubheading
+    {Company 2}{Location}
+    {Role}{Start - End}
+    \resumeItemListStart
+        \resumeItemWithoutTitle{}{Caramels halvah powder sweet roll gingerbread tiramisu wafer. Cookie cake liquorice chocolate I love. Topping lollipop jelly-o sweet roll cookie chocolate bar oat cake candy canes. I love biscuit pastry icing jelly-o halvah cupcake topping.}
+        \resumeItemWithoutTitle{}{Shortbread candy canes caramels icing marzipan carrot cake. Jelly muffin carrot cake gummi bears muffin lollipop muffin gummies chupa chups. Sugar plum gingerbread jelly beans jelly-o I love donut dragée I love halvah. I love sesame snaps bonbon jelly beans caramels.}
+        \resumeItemWithoutTitle{}{Shortbread chupa chups cupcake gummi bears croissant muffin I love cotton candy. Gummi bears icing cookie chocolate bar lemon drops danish chocolate. Sweet roll I love cheesecake sweet roll carrot cake soufflé.}
+    \resumeItemListEnd
+  
+    % Company 3
+    \resumeSubheading
+    {Company 3}{Location}
+    {Role}{Start - End}
+    \resumeItemListStart
+        \resumeItemWithoutTitle{}{Oat cake sesame snaps sugar plum I love tootsie roll chupa chups gingerbread. Cookie jelly-o halvah jelly beans cookie caramels. Jujubes muffin soufflé fruitcake candy canes.}
+        \resumeItemWithoutTitle{}{Powder cupcake I love liquorice biscuit pudding I love halvah. Toffee macaroon carrot cake sesame snaps dragée topping. Cupcake candy canes carrot cake apple pie fruitcake I love candy jelly beans oat cake.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% Projects Section
+\section{Projects}
+\resumeSubHeadingListStart
+  % Project 1
+  \resumeProjectNew
+  {Project 1}
+  {Project-Link}
+  {I love cheese, especially fromage frais pecorino. Pecorino smelly cheese camembert de normandie everyone loves cheesy grin swiss manchego cheese triangles. Mascarpone chalk and cheese ricotta gouda mascarpone port-salut croque monsieur edam. Pecorino cauliflower cheese cheese strings mozzarella goat cut the cheese bavarian bergkase cheeseburger. Macaroni cheese brie macaroni cheese stilton.}
+
+  % Project 2
+  \resumeProjectNew
+  {Project 2}
+  {Project-Link}
+  {Queso cheeseburger melted cheese. Port-salut cheese and wine chalk and cheese manchego stilton feta babybel bavarian bergkase. Parmesan cheesecake boursin who moved my cheese edam st. agur blue cheese feta fromage. Squirty cheese pepper jack roquefort cheese and biscuits goat chalk and cheese cheese triangles.}
+
+  % Project 3
+  \resumeProjectNewWithoutLink
+  {Project 3}
+  {Chalk and cheese croque monsieur the big cheese. Pepper jack macaroni cheese macaroni cheese camembert de normandie cream cheese st. agur blue cheese cheddar cauliflower cheese. The big cheese macaroni cheese say cheese jarlsberg macaroni cheese camembert de normandie cut the cheese cow. Roquefort stinking bishop cottage cheese fromage frais babybel the big cheese paneer caerphilly. Cheesecake pepper jack melted cheese.}
+\resumeSubHeadingListEnd
+
+% Skills Section
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Languge1, Language2, Language3...}
+    \resumeSubItem{Technologies}{Technology1, Technology2, Technology3...}
+    \resumeSubItem{APIs/Libraries}{API1, Library1, API2, Library2...}
+  \resumeSubHeadingListEnd
+
+% Awards Section
+\section{Leadership and Recognition}
+\resumeSubHeadingListStart
+  \resumeSubItem{Alan J. Perlis}{There are two ways to write error-free programs; only the third one works.}
+  \resumeSubItem{Blair Houghton}{Come to think of it, there are already a million monkeys on a million typewriters, and Usenet is nothing like Shakespeare.}
+  \resumeSubItem{Professor Lynn Robert Carter}{It's interesting how the brain says one thing and the fingers say something else.}
+\resumeSubHeadingListEnd
+
+\end{document}
